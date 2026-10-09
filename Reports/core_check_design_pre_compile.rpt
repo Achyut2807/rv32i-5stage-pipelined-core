@@ -1,0 +1,693 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09
+Date:        Fri Jul  3 17:44:41 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    406
+    Unconnected ports (LINT-28)                                   216
+    Feedthrough (LINT-29)                                         123
+    Shorted outputs (LINT-31)                                      65
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                             133
+    Connected to power or ground (LINT-32)                        120
+    Nets connected to multiple pins on same cell (LINT-33)         13
+--------------------------------------------------------------------------------
+
+Warning: In design 'if_stage', port 'pc_plus4_o[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage', port 'pc_plus4_o[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage', port 'pc_plus4_o[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_id_reg', port 'pc_plus4_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_id_reg', port 'pc_plus4_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_id_reg', port 'pc_plus4_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_stage', port 'ctrl_o[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_stage', port 'ctrl_o[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_stage', port 'ctrl_o[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_stage', port 'ctrl_o[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_stage', port 'ctrl_o[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'decode_stage', port 'ctrl_o[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_i[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_i[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_i[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_o[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_o[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_o[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_o[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'id_ex_reg', port 'ctrl_o[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_i[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_i[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'alu_result_o[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'alu_result_o[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage', port 'ctrl_o[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'alu_result_i[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'alu_result_i[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'alu_result_o[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'alu_result_o[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_mem_reg', port 'ctrl_o[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'alu_result_i[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'alu_result_i[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'ctrl_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'dmem_addr_o[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_stage', port 'dmem_addr_o[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'alu_result_i[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'alu_result_i[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_i[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'alu_result_o[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'alu_result_o[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'mem_wb_reg', port 'ctrl_o[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'A[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'A[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[29]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[28]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[27]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[26]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[25]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'B[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'SUM[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'SUM[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_1', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_1', port 'GE_LT' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_1', port 'GE_GT_EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_1', port 'EQ_NE' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_9', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_9', port 'GE_LT' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_9', port 'GE_GT_EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_9', port 'EQ_NE' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_11', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_11', port 'GE_LT' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_11', port 'GE_GT_EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_11', port 'EQ_NE' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_12', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_12', port 'GE_LT' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_12', port 'GE_GT_EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'ex_stage_DW_cmp_12', port 'EQ_NE' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_0', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_0', port 'GE_LT' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_0', port 'GE_GT_EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_0', port 'EQ_NE' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_1', port 'TC' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_1', port 'GE_LT' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_1', port 'GE_GT_EQ' is not connected to any nets. (LINT-28)
+Warning: In design 'alu_DW_cmp_1', port 'EQ_NE' is not connected to any nets. (LINT-28)
+Warning: In design 'if_stage', input port 'imem_rdata_i[31]' is connected directly to output port 'instr_o[31]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[30]' is connected directly to output port 'instr_o[30]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[29]' is connected directly to output port 'instr_o[29]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[28]' is connected directly to output port 'instr_o[28]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[27]' is connected directly to output port 'instr_o[27]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[26]' is connected directly to output port 'instr_o[26]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[25]' is connected directly to output port 'instr_o[25]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[24]' is connected directly to output port 'instr_o[24]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[23]' is connected directly to output port 'instr_o[23]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[22]' is connected directly to output port 'instr_o[22]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[21]' is connected directly to output port 'instr_o[21]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[20]' is connected directly to output port 'instr_o[20]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[19]' is connected directly to output port 'instr_o[19]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[18]' is connected directly to output port 'instr_o[18]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[17]' is connected directly to output port 'instr_o[17]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[16]' is connected directly to output port 'instr_o[16]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[15]' is connected directly to output port 'instr_o[15]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[14]' is connected directly to output port 'instr_o[14]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[13]' is connected directly to output port 'instr_o[13]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[12]' is connected directly to output port 'instr_o[12]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[11]' is connected directly to output port 'instr_o[11]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[10]' is connected directly to output port 'instr_o[10]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[9]' is connected directly to output port 'instr_o[9]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[8]' is connected directly to output port 'instr_o[8]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[7]' is connected directly to output port 'instr_o[7]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[6]' is connected directly to output port 'instr_o[6]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[5]' is connected directly to output port 'instr_o[5]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[4]' is connected directly to output port 'instr_o[4]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[3]' is connected directly to output port 'instr_o[3]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[2]' is connected directly to output port 'instr_o[2]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[1]' is connected directly to output port 'instr_o[1]'. (LINT-29)
+Warning: In design 'if_stage', input port 'imem_rdata_i[0]' is connected directly to output port 'instr_o[0]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[31]' is connected directly to output port 'imm_ext_o[31]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[24]' is connected directly to output port 'rs2_addr_o[4]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[23]' is connected directly to output port 'rs2_addr_o[3]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[22]' is connected directly to output port 'rs2_addr_o[2]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[21]' is connected directly to output port 'rs2_addr_o[1]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[20]' is connected directly to output port 'rs2_addr_o[0]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[19]' is connected directly to output port 'rs1_addr_o[4]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[18]' is connected directly to output port 'rs1_addr_o[3]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[17]' is connected directly to output port 'rs1_addr_o[2]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[16]' is connected directly to output port 'rs1_addr_o[1]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[15]' is connected directly to output port 'rs1_addr_o[0]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[11]' is connected directly to output port 'rd_addr_o[4]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[10]' is connected directly to output port 'rd_addr_o[3]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[9]' is connected directly to output port 'rd_addr_o[2]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[8]' is connected directly to output port 'rd_addr_o[1]'. (LINT-29)
+Warning: In design 'decode_stage', input port 'instr_i[7]' is connected directly to output port 'rd_addr_o[0]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[31]' is connected directly to output port 'pc_plus4_o[31]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[30]' is connected directly to output port 'pc_plus4_o[30]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[29]' is connected directly to output port 'pc_plus4_o[29]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[28]' is connected directly to output port 'pc_plus4_o[28]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[27]' is connected directly to output port 'pc_plus4_o[27]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[26]' is connected directly to output port 'pc_plus4_o[26]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[25]' is connected directly to output port 'pc_plus4_o[25]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[24]' is connected directly to output port 'pc_plus4_o[24]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[23]' is connected directly to output port 'pc_plus4_o[23]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[22]' is connected directly to output port 'pc_plus4_o[22]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[21]' is connected directly to output port 'pc_plus4_o[21]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[20]' is connected directly to output port 'pc_plus4_o[20]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[19]' is connected directly to output port 'pc_plus4_o[19]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[18]' is connected directly to output port 'pc_plus4_o[18]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[17]' is connected directly to output port 'pc_plus4_o[17]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[16]' is connected directly to output port 'pc_plus4_o[16]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[15]' is connected directly to output port 'pc_plus4_o[15]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[14]' is connected directly to output port 'pc_plus4_o[14]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[13]' is connected directly to output port 'pc_plus4_o[13]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[12]' is connected directly to output port 'pc_plus4_o[12]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[11]' is connected directly to output port 'pc_plus4_o[11]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[10]' is connected directly to output port 'pc_plus4_o[10]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[9]' is connected directly to output port 'pc_plus4_o[9]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[8]' is connected directly to output port 'pc_plus4_o[8]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[7]' is connected directly to output port 'pc_plus4_o[7]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[6]' is connected directly to output port 'pc_plus4_o[6]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[5]' is connected directly to output port 'pc_plus4_o[5]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[4]' is connected directly to output port 'pc_plus4_o[4]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[3]' is connected directly to output port 'pc_plus4_o[3]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[2]' is connected directly to output port 'pc_plus4_o[2]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[1]' is connected directly to output port 'pc_plus4_o[1]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'pc_plus4_i[0]' is connected directly to output port 'pc_plus4_o[0]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'rd_addr_i[4]' is connected directly to output port 'rd_addr_o[4]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'rd_addr_i[3]' is connected directly to output port 'rd_addr_o[3]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'rd_addr_i[2]' is connected directly to output port 'rd_addr_o[2]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'rd_addr_i[1]' is connected directly to output port 'rd_addr_o[1]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'rd_addr_i[0]' is connected directly to output port 'rd_addr_o[0]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'ctrl_i[23]' is connected directly to output port 'ctrl_o[23]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'ctrl_i[22]' is connected directly to output port 'ctrl_o[22]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'ctrl_i[20]' is connected directly to output port 'ctrl_o[20]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'ctrl_i[19]' is connected directly to output port 'ctrl_o[19]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'ctrl_i[18]' is connected directly to output port 'ctrl_o[18]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'ctrl_i[17]' is connected directly to output port 'ctrl_o[17]'. (LINT-29)
+Warning: In design 'ex_stage', input port 'ctrl_i[16]' is connected directly to output port 'ctrl_o[16]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[31]' is connected directly to output port 'dmem_addr_o[31]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[30]' is connected directly to output port 'dmem_addr_o[30]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[29]' is connected directly to output port 'dmem_addr_o[29]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[28]' is connected directly to output port 'dmem_addr_o[28]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[27]' is connected directly to output port 'dmem_addr_o[27]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[26]' is connected directly to output port 'dmem_addr_o[26]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[23]' is connected directly to output port 'dmem_addr_o[23]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[22]' is connected directly to output port 'dmem_addr_o[22]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[21]' is connected directly to output port 'dmem_addr_o[21]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[20]' is connected directly to output port 'dmem_addr_o[20]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[19]' is connected directly to output port 'dmem_addr_o[19]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[18]' is connected directly to output port 'dmem_addr_o[18]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[17]' is connected directly to output port 'dmem_addr_o[17]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[16]' is connected directly to output port 'dmem_addr_o[16]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[15]' is connected directly to output port 'dmem_addr_o[15]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[14]' is connected directly to output port 'dmem_addr_o[14]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[13]' is connected directly to output port 'dmem_addr_o[13]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[12]' is connected directly to output port 'dmem_addr_o[12]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[11]' is connected directly to output port 'dmem_addr_o[11]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[10]' is connected directly to output port 'dmem_addr_o[10]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[9]' is connected directly to output port 'dmem_addr_o[9]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[8]' is connected directly to output port 'dmem_addr_o[8]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[7]' is connected directly to output port 'dmem_addr_o[7]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[6]' is connected directly to output port 'dmem_addr_o[6]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[5]' is connected directly to output port 'dmem_addr_o[5]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[4]' is connected directly to output port 'dmem_addr_o[4]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[3]' is connected directly to output port 'dmem_addr_o[3]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[2]' is connected directly to output port 'dmem_addr_o[2]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[1]' is connected directly to output port 'dmem_addr_o[1]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'alu_result_i[0]' is connected directly to output port 'dmem_addr_o[0]'. (LINT-29)
+Warning: In design 'mem_stage', input port 'ctrl_i[19]' is connected directly to output port 'dmem_we_o'. (LINT-29)
+Warning: In design 'core', output port 'dmem_addr_o[25]' is connected directly to output port 'dmem_addr_o[24]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[31]' is connected directly to output port 'pc_o[31]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[30]' is connected directly to output port 'pc_o[30]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[29]' is connected directly to output port 'pc_o[29]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[28]' is connected directly to output port 'pc_o[28]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[27]' is connected directly to output port 'pc_o[27]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[26]' is connected directly to output port 'pc_o[26]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[25]' is connected directly to output port 'pc_o[25]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[24]' is connected directly to output port 'pc_o[24]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[23]' is connected directly to output port 'pc_o[23]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[22]' is connected directly to output port 'pc_o[22]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[21]' is connected directly to output port 'pc_o[21]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[20]' is connected directly to output port 'pc_o[20]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[19]' is connected directly to output port 'pc_o[19]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[18]' is connected directly to output port 'pc_o[18]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[17]' is connected directly to output port 'pc_o[17]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[16]' is connected directly to output port 'pc_o[16]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[15]' is connected directly to output port 'pc_o[15]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[14]' is connected directly to output port 'pc_o[14]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[13]' is connected directly to output port 'pc_o[13]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[12]' is connected directly to output port 'pc_o[12]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[11]' is connected directly to output port 'pc_o[11]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[10]' is connected directly to output port 'pc_o[10]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[9]' is connected directly to output port 'pc_o[9]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[8]' is connected directly to output port 'pc_o[8]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[7]' is connected directly to output port 'pc_o[7]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[6]' is connected directly to output port 'pc_o[6]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[5]' is connected directly to output port 'pc_o[5]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[4]' is connected directly to output port 'pc_o[4]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[3]' is connected directly to output port 'pc_o[3]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[2]' is connected directly to output port 'pc_o[2]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[1]' is connected directly to output port 'pc_o[1]'. (LINT-31)
+Warning: In design 'if_stage', output port 'imem_addr_o[0]' is connected directly to output port 'pc_o[0]'. (LINT-31)
+Warning: In design 'hazard_unit', output port 'stall_o' is connected directly to output port 'bubble_o'. (LINT-31)
+Warning: In design 'id_ex_reg', output port 'ctrl_o[22]' is connected directly to output port 'ctrl_o[6]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[31]' is connected directly to output port 'branch_target_o[31]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[30]' is connected directly to output port 'branch_target_o[30]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[29]' is connected directly to output port 'branch_target_o[29]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[28]' is connected directly to output port 'branch_target_o[28]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[27]' is connected directly to output port 'branch_target_o[27]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[26]' is connected directly to output port 'branch_target_o[26]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[23]' is connected directly to output port 'branch_target_o[23]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[22]' is connected directly to output port 'branch_target_o[22]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[21]' is connected directly to output port 'branch_target_o[21]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[20]' is connected directly to output port 'branch_target_o[20]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[19]' is connected directly to output port 'branch_target_o[19]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[18]' is connected directly to output port 'branch_target_o[18]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[17]' is connected directly to output port 'branch_target_o[17]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[16]' is connected directly to output port 'branch_target_o[16]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[15]' is connected directly to output port 'branch_target_o[15]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[14]' is connected directly to output port 'branch_target_o[14]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[13]' is connected directly to output port 'branch_target_o[13]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[12]' is connected directly to output port 'branch_target_o[12]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[11]' is connected directly to output port 'branch_target_o[11]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[10]' is connected directly to output port 'branch_target_o[10]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[9]' is connected directly to output port 'branch_target_o[9]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[8]' is connected directly to output port 'branch_target_o[8]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[7]' is connected directly to output port 'branch_target_o[7]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[6]' is connected directly to output port 'branch_target_o[6]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[5]' is connected directly to output port 'branch_target_o[5]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[4]' is connected directly to output port 'branch_target_o[4]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[3]' is connected directly to output port 'branch_target_o[3]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[2]' is connected directly to output port 'branch_target_o[2]'. (LINT-31)
+Warning: In design 'ex_stage', output port 'alu_result_o[1]' is connected directly to output port 'branch_target_o[1]'. (LINT-31)
+Warning: In design 'ex_mem_reg', output port 'ctrl_o[21]' is connected directly to output port 'ctrl_o[20]'. (LINT-31)
+Warning: In design 'core', a pin on submodule 'u_if_id_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pc_plus4_i[2]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_if_id_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pc_plus4_i[1]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_if_id_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pc_plus4_i[0]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_id_ex_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[22]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_id_ex_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[21]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_id_ex_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[13]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_id_ex_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[2]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_id_ex_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[1]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_id_ex_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[0]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[21]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[13]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[2]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[1]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[0]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'alu_result_i[25]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'alu_result_i[24]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[21]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[15]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[14]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[13]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[12]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[11]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[10]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[9]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[8]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[7]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[6]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[5]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[4]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[3]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[2]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[1]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_ex_mem_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[0]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'alu_result_i[25]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'alu_result_i[24]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[15]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[14]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[13]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[12]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[11]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[10]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[9]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[8]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[7]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[6]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[5]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[4]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[3]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[2]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[1]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_stage' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[0]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'alu_result_i[25]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'alu_result_i[24]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[15]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[14]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[13]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[12]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[11]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[10]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[9]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[8]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[7]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[6]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[5]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[4]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[3]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[2]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[1]' is connected to logic 0. 
+Warning: In design 'core', a pin on submodule 'u_mem_wb_reg' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ctrl_i[0]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[31]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[30]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[29]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[28]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[27]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[26]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[25]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[24]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[23]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[22]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[21]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[20]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[19]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[18]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[17]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[16]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[15]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[14]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[13]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[12]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[11]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[10]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[9]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[6]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[5]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[4]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[3]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 1. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[0]' is connected to logic 0. 
+Warning: In design 'if_stage', a pin on submodule 'add_x_1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'ex_stage', a pin on submodule 'lt_x_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+Warning: In design 'ex_stage', a pin on submodule 'lt_x_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_LT' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'lt_x_9' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_GT_EQ' is connected to logic 0. 
+Warning: In design 'ex_stage', a pin on submodule 'gte_x_8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'gte_x_8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_LT' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'gte_x_8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_GT_EQ' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'gte_x_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+Warning: In design 'ex_stage', a pin on submodule 'gte_x_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_LT' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'gte_x_10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_GT_EQ' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'lt_x_7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'lt_x_7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_LT' is connected to logic 1. 
+Warning: In design 'ex_stage', a pin on submodule 'lt_x_7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_GT_EQ' is connected to logic 0. 
+Warning: In design 'alu', a pin on submodule 'lt_x_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 0. 
+Warning: In design 'alu', a pin on submodule 'lt_x_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_LT' is connected to logic 1. 
+Warning: In design 'alu', a pin on submodule 'lt_x_3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_GT_EQ' is connected to logic 0. 
+Warning: In design 'alu', a pin on submodule 'lt_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'TC' is connected to logic 1. 
+Warning: In design 'alu', a pin on submodule 'lt_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_LT' is connected to logic 1. 
+Warning: In design 'alu', a pin on submodule 'lt_x_2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'GE_GT_EQ' is connected to logic 0. 
+Warning: In design 'core', the same net is connected to more than one pin on submodule 'u_if_id_reg'. (LINT-33)
+   Net 'exmem_alu_result[25]' is connected to pins 'pc_plus4_i[2]', 'pc_plus4_i[1]'', 'pc_plus4_i[0]'.
+Warning: In design 'core', the same net is connected to more than one pin on submodule 'u_id_ex_reg'. (LINT-33)
+   Net 'exmem_alu_result[25]' is connected to pins 'ctrl_i[22]', 'ctrl_i[21]'', 'ctrl_i[13]', 'ctrl_i[2]', 'ctrl_i[1]', 'ctrl_i[0]'.
+Warning: In design 'core', the same net is connected to more than one pin on submodule 'u_ex_stage'. (LINT-33)
+   Net 'exmem_alu_result[25]' is connected to pins 'ctrl_i[21]', 'ctrl_i[13]'', 'ctrl_i[2]', 'ctrl_i[1]', 'ctrl_i[0]'.
+Warning: In design 'core', the same net is connected to more than one pin on submodule 'u_ex_mem_reg'. (LINT-33)
+   Net 'exmem_alu_result[25]' is connected to pins 'alu_result_i[25]', 'alu_result_i[24]'', 'ctrl_i[21]', 'ctrl_i[15]', 'ctrl_i[14]', 'ctrl_i[13]', 'ctrl_i[12]', 'ctrl_i[11]', 'ctrl_i[10]', 'ctrl_i[9]', 'ctrl_i[8]', 'ctrl_i[7]', 'ctrl_i[6]', 'ctrl_i[5]', 'ctrl_i[4]', 'ctrl_i[3]', 'ctrl_i[2]', 'ctrl_i[1]', 'ctrl_i[0]'.
+Warning: In design 'core', the same net is connected to more than one pin on submodule 'u_mem_stage'. (LINT-33)
+   Net 'exmem_alu_result[25]' is connected to pins 'alu_result_i[25]', 'alu_result_i[24]'', 'ctrl_i[15]', 'ctrl_i[14]', 'ctrl_i[13]', 'ctrl_i[12]', 'ctrl_i[11]', 'ctrl_i[10]', 'ctrl_i[9]', 'ctrl_i[8]', 'ctrl_i[7]', 'ctrl_i[6]', 'ctrl_i[5]', 'ctrl_i[4]', 'ctrl_i[3]', 'ctrl_i[2]', 'ctrl_i[1]', 'ctrl_i[0]'.
+Warning: In design 'core', the same net is connected to more than one pin on submodule 'u_mem_wb_reg'. (LINT-33)
+   Net 'exmem_alu_result[25]' is connected to pins 'alu_result_i[25]', 'alu_result_i[24]'', 'ctrl_i[15]', 'ctrl_i[14]', 'ctrl_i[13]', 'ctrl_i[12]', 'ctrl_i[11]', 'ctrl_i[10]', 'ctrl_i[9]', 'ctrl_i[8]', 'ctrl_i[7]', 'ctrl_i[6]', 'ctrl_i[5]', 'ctrl_i[4]', 'ctrl_i[3]', 'ctrl_i[2]', 'ctrl_i[1]', 'ctrl_i[0]'.
+Warning: In design 'if_stage', the same net is connected to more than one pin on submodule 'add_x_1'. (LINT-33)
+   Net 'n1' is connected to pins 'B[31]', 'B[30]'', 'B[29]', 'B[28]', 'B[27]', 'B[26]', 'B[25]', 'B[24]', 'B[23]', 'B[22]', 'B[21]', 'B[20]', 'B[19]', 'B[18]', 'B[17]', 'B[16]', 'B[15]', 'B[14]', 'B[13]', 'B[12]', 'B[11]', 'B[10]', 'B[9]', 'B[8]', 'B[7]', 'B[6]', 'B[5]', 'B[4]', 'B[3]', 'B[1]', 'B[0]', 'CI'.
+Warning: In design 'ex_stage', the same net is connected to more than one pin on submodule 'lt_x_9'. (LINT-33)
+   Net 'n4' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'ex_stage', the same net is connected to more than one pin on submodule 'gte_x_8'. (LINT-33)
+   Net 'n3' is connected to pins 'TC', 'GE_LT'', 'GE_GT_EQ'.
+Warning: In design 'ex_stage', the same net is connected to more than one pin on submodule 'gte_x_10'. (LINT-33)
+   Net 'n3' is connected to pins 'GE_LT', 'GE_GT_EQ''.
+Warning: In design 'ex_stage', the same net is connected to more than one pin on submodule 'lt_x_7'. (LINT-33)
+   Net 'n3' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'alu', the same net is connected to more than one pin on submodule 'lt_x_3'. (LINT-33)
+   Net 'n3' is connected to pins 'TC', 'GE_GT_EQ''.
+Warning: In design 'alu', the same net is connected to more than one pin on submodule 'lt_x_2'. (LINT-33)
+   Net 'n4' is connected to pins 'TC', 'GE_LT''.
+Warning: In design 'core', output port 'dmem_addr_o[25]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'core', output port 'dmem_addr_o[24]' is connected directly to 'logic 0'. (LINT-52)
+1

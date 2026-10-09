@@ -1,0 +1,81 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : core
+Version: W-2024.09
+Date   : Fri Jul  3 16:28:53 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p7vn40c (File: /home/student/Documents/Manav/RTL2GDSII/Workshop/ref/lib/stdcell_rvt/saed32rvt_ss0p7vn40c.db)
+
+
+Operating Conditions: ss0p7vn40c   Library: saed32rvt_ss0p7vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+core                   35000             saed32rvt_ss0p7vn40c
+if_stage               8000              saed32rvt_ss0p7vn40c
+if_id_reg              8000              saed32rvt_ss0p7vn40c
+decode_stage           16000             saed32rvt_ss0p7vn40c
+hazard_unit            ForQA             saed32rvt_ss0p7vn40c
+id_ex_reg              8000              saed32rvt_ss0p7vn40c
+forwarding_unit        ForQA             saed32rvt_ss0p7vn40c
+ex_stage               8000              saed32rvt_ss0p7vn40c
+ex_mem_reg             8000              saed32rvt_ss0p7vn40c
+mem_stage              8000              saed32rvt_ss0p7vn40c
+mem_wb_reg             8000              saed32rvt_ss0p7vn40c
+if_stage_DW01_add_0    8000              saed32rvt_ss0p7vn40c
+reg_file               16000             saed32rvt_ss0p7vn40c
+alu                    8000              saed32rvt_ss0p7vn40c
+ex_stage_DW_cmp_1      8000              saed32rvt_ss0p7vn40c
+ex_stage_DW_cmp_9      8000              saed32rvt_ss0p7vn40c
+ex_stage_DW_cmp_11     8000              saed32rvt_ss0p7vn40c
+alu_DW_cmp_0           8000              saed32rvt_ss0p7vn40c
+alu_DW_cmp_1           8000              saed32rvt_ss0p7vn40c
+alu_DP_OP_22_125_4652_3
+                       8000              saed32rvt_ss0p7vn40c
+ex_stage_DW_cmp_12     8000              saed32rvt_ss0p7vn40c
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+core                                      5.180  529.296 6.41e+06  540.886 100.0
+  u_mem_wb_reg (mem_wb_reg)               0.295   36.053 2.81e+05   36.629   6.8
+  u_mem_stage (mem_stage)              6.75e-02    0.303 1.29e+04    0.384   0.1
+  u_ex_mem_reg (ex_mem_reg)               0.146   37.280 1.61e+05   37.587   6.9
+  u_ex_stage (ex_stage)                   0.423    0.953 1.63e+05    1.539   0.3
+    lt_x_7 (ex_stage_DW_cmp_12)        3.72e-03 1.19e-02 1.01e+04 2.57e-02   0.0
+    gte_x_10 (ex_stage_DW_cmp_11)      2.90e-03 9.85e-03 9.20e+03 2.19e-02   0.0
+    gte_x_8 (ex_stage_DW_cmp_9)        2.83e-03 7.74e-03 8.43e+03 1.90e-02   0.0
+    lt_x_9 (ex_stage_DW_cmp_1)         3.54e-03 9.76e-03 8.98e+03 2.23e-02   0.0
+    u_alu (alu)                           0.231    0.581 8.99e+04    0.901   0.2
+      DP_OP_22_125_4652 (alu_DP_OP_22_125_4652_3)
+                                       6.24e-02    0.152 2.67e+04    0.241   0.0
+      lt_x_2 (alu_DW_cmp_1)            2.96e-02    0.144 8.61e+03    0.182   0.0
+      lt_x_3 (alu_DW_cmp_0)            2.95e-02    0.129 8.38e+03    0.167   0.0
+  u_forwarding_unit (forwarding_unit)  9.16e-02    0.417 5.16e+03    0.514   0.1
+  u_id_ex_reg (id_ex_reg)                 0.608   56.355 2.52e+06   59.482  11.0
+  u_hazard_unit (hazard_unit)          8.22e-02    0.184 1.57e+03    0.267   0.0
+  u_decode_stage (decode_stage)           2.544  358.459 5.90e+05  361.593  66.9
+    u_reg_file (reg_file)                 2.348  358.014 5.82e+05  360.944  66.7
+  u_if_id_reg (if_id_reg)                 0.483   28.820 2.33e+06   31.629   5.8
+  u_if_stage (if_stage)                   0.323   10.405 3.43e+05   11.071   2.0
+    add_x_1 (if_stage_DW01_add_0)      5.68e-02    0.145 5.19e+03    0.207   0.0
+1

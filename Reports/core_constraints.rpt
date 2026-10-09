@@ -1,0 +1,117 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : core
+Version: W-2024.09
+Date   : Fri Jul  3 16:28:53 2026
+****************************************
+
+
+    Net: u_ex_stage/u_alu/n5277
+
+    max_transition         0.80
+  - Transition Time        0.92
+  ------------------------------
+    Slack                 -0.12  (VIOLATED)
+
+    List of pins on net "u_ex_stage/u_alu/n5277" with transition violations :
+   -----------------------------------------------------------------
+                             Required        Actual
+                            Transition     Transition       Slack
+   -----------------------------------------------------------------
+       PIN :   u_ex_stage/u_alu/U247/A2
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U248/A2
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U361/A3
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U380/A3
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U444/A3
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U481/A1
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U527/A1
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U572/A1
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U684/A2
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U720/A2
+                                0.80           0.92          -0.12  (VIOLATED)
+       PIN :   u_ex_stage/u_alu/U62/Y
+                                0.80           0.92          -0.12  (VIOLATED)
+
+    Net: u_decode_stage/n339
+
+    max_transition         0.80
+  - Transition Time        0.90
+  ------------------------------
+    Slack                 -0.10  (VIOLATED)
+
+    List of pins on net "u_decode_stage/n339" with transition violations :
+   -----------------------------------------------------------------
+                             Required        Actual
+                            Transition     Transition       Slack
+   -----------------------------------------------------------------
+       PIN :   u_decode_stage/U7/A
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U55/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U69/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U86/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U100/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U101/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U102/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U103/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U104/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U105/A2
+                                0.80           0.90          -0.10  (VIOLATED)
+       PIN :   u_decode_stage/U54/Y
+                                0.80           0.90          -0.10  (VIOLATED)
+
+    Net: u_mem_stage/n454
+
+    max_transition         0.80
+  - Transition Time        0.86
+  ------------------------------
+    Slack                 -0.06  (VIOLATED)
+
+    List of pins on net "u_mem_stage/n454" with transition violations :
+   -----------------------------------------------------------------
+                             Required        Actual
+                            Transition     Transition       Slack
+   -----------------------------------------------------------------
+       PIN :   u_mem_stage/U59/A1
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U112/A2
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U145/A2
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U147/A4
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U149/A4
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U151/A4
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U153/A4
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U155/A4
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U157/A4
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U159/A4
+                                0.80           0.86          -0.06  (VIOLATED)
+       PIN :   u_mem_stage/U57/Y
+                                0.80           0.86          -0.06  (VIOLATED)
+
+1
